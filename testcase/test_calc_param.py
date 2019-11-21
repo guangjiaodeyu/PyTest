@@ -13,14 +13,14 @@ class TestCalc:
 
 
 
-    @pytest.mark.parametrize("a,b,c",[
-        (1, 1, 2),
-        (1, 2, 3),
-        (2, 2, 4)
-    ])
-    def test_add(self,a,b,c):
-        result = self.calc.add(a,b)
-        assert c == result
+    # @pytest.mark.parametrize("a,b,c",[
+    #     (1, 1, 2),
+    #     (1, 2, 3),
+    #     (2, 2, 4)
+    # ])
+    # def test_add(self,a,b,c):
+    #     result = self.calc.add(a,b)
+    #     assert c == result
 
     # @file_data('calc.yaml')
     # @pytest.mark.parametrize("a,b,c",json.load(open('calc.json')))
