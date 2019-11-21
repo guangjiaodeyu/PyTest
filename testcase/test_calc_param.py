@@ -1,5 +1,7 @@
 import json
 # from unittest import TestCase
+import os
+
 from ddt import ddt, data, file_data, unpack
 from src.calc import Calc
 import yaml
@@ -7,9 +9,11 @@ import pytest
 
 
 
+
 class TestCalc:
     def setup_method(self) -> None:
         self.calc = Calc()
+
 
 
 
@@ -24,7 +28,7 @@ class TestCalc:
 
     # @file_data('calc.yaml')
     # @pytest.mark.parametrize("a,b,c",json.load(open('calc.json')))
-    @pytest.mark.parametrize("a,b,c", yaml.load(open('/Users/apple/Desktop/AutomatorProject/PyTest/testcase/calc.yaml')))
+    @pytest.mark.parametrize("a,b,c", yaml.load(open(os.getcwd()+'/testcase/calc.yaml')))
     def test_div(self,a,b,c):
         # calc = Calc()
         assert self.calc.div(a, b) == c
