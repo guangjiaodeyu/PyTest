@@ -1,0 +1,4 @@
+[32mINFO    [0m root:test_pytest_object.py:30 setup__method
+[32mINFO    [0m root:test_pytest_object.py:42 teardown__method
+[32mINFO    [0m root:test_pytest_object.py:46 teardown_class
+[32mINFO    [0m root:test_pytest_object.py:11 teardown_module

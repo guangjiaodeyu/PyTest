@@ -1,0 +1,4 @@
+INFO:root:setup_module
+INFO:root:setup_class
+INFO:root:setup__method
+INFO:root:teardown__method
